@@ -1,3 +1,98 @@
+# Tech Haven - An Open-source E Commerce Store
+![tech-haven-img](https://github.com/user-attachments/assets/a33b21e5-6edb-4e27-9839-4ffcb12e909e)
+
+</details>
+
+## :bangbang: Folder Structure
+
+Here is the folder structure of this app.
+
+```bash
+e-commerce/
+  |- public/
+    |-- admin-ui/
+    |-- assets/
+      |--- icons/
+      |--- images/
+  |- src/
+    |-- app/
+      |--- _api/
+      |--- _blocks/
+      |--- _components/
+      |--- _css/
+      |--- _graphql/
+      |--- _heros/
+      |--- _providers/
+      |--- _utilities/
+      |--- (pages)/
+      |--- api/
+      |--- constants/
+      |--- cssVariables.js
+      |--- layout.tsx
+      |--- page.tsx
+    |-- payload/
+      |--- access/
+      |--- blocks/
+      |--- collections/
+      |--- components/
+      |--- endpoints/
+      |--- fields/
+      |--- globals/
+      |--- hooks/
+      |--- seed/
+      |--- stripe/
+      |--- utilities/
+      |--- dotenv.js
+      |--- emptyModuleMock.js
+      |--- payload-types.ts
+      |--- payload-config.ts
+    |-- server.default.ts
+    |-- server.ts
+  |- .env
+  |- .env.example
+  |- .eslintrc.json
+  |- .gitignore
+  |- .prettierignore
+  |- csp.js
+  |- eject.ts
+  |- next.config.js
+  |- nodemon.json
+  |- package.json
+  |- redirects.js
+  |- tsconfig.json
+  |- tsconfig.server.json
+```
+
+<br />
+
+## :camera: Screenshots:
+<img width="1457" alt="Screenshot 2024-07-29 at 20 56 33" src="https://github.com/user-attachments/assets/75a6e19c-0eab-40cc-b489-818b716e10eb">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 56 41" src="https://github.com/user-attachments/assets/0e2691b8-ac92-4756-8464-93f7ad080926">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 56 50" src="https://github.com/user-attachments/assets/dc0a6ece-200b-447b-b4b7-5ceecfae078c">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 57 19" src="https://github.com/user-attachments/assets/b113277c-18f3-4dff-ac42-e55be39d4d09">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 57 35" src="https://github.com/user-attachments/assets/2b7118a9-550f-47c1-92a3-fcc2e476122c">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 57 55" src="https://github.com/user-attachments/assets/f32fdf3b-9aab-4bfa-a516-b3e514b233b4">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 58 08" src="https://github.com/user-attachments/assets/be043b11-273e-4345-a10f-7142d486e4c3">
+
+<img width="1457" alt="Screenshot 2024-07-29 at 20 58 41" src="https://github.com/user-attachments/assets/9d554cfb-cabd-4c80-81c6-3a8895232e71">
+
+
+## :gear: Tech Stack
+
+[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![Typescript](https://skillicons.dev/icons?i=ts "Typescript")](https://www.typescriptlang.org/ "Typescript") [![Vercel](https://skillicons.dev/icons?i=vercel "Vercel")](https://vercel.app/ "Vercel") [![MongoDB](https://skillicons.dev/icons?i=mongodb "MongoDB")](https://tailwindcss.com/ "MongoDB") [![GraphQL](https://skillicons.dev/icons?i=graphql "GraphQL")](https://graphql.org/ "GraphQL")
+
+## :wrench: Stats
+
+[![Stats for Tech Haven](/.github/images/stats.svg "Stats for Tech Haven")](https://pagespeed-insights-svg.glitch.me/?url=https://app-ecommerce.payloadcms.app/ "Stats for Tech Haven")
+
+
+
 # Payload E-Commerce Template
 
 This is the official [Payload E-Commerce Template](https://github.com/payloadcms/payload/blob/main/templates/ecommerce). Use it to power e-commerce businesses and online stores of all sizes. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
