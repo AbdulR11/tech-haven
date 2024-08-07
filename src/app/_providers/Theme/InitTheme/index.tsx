@@ -7,7 +7,7 @@ export const InitTheme: React.FC = () => {
     // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
     <Script
       id="theme-script"
-      strategy="beforeInteractive"
+      // strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: `
   (function () {
@@ -17,7 +17,7 @@ export const InitTheme: React.FC = () => {
       var hasImplicitPreference = typeof mql.matches === 'boolean'
 
       if (hasImplicitPreference) {
-        return mql.matches ? 'dark' : 'light'
+        return mql.matches ? 'light' : 'light'
       }
 
       return null

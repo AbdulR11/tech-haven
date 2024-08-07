@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from 'react'
 
 import { Product } from '../../../payload/payload-types'
-import { AddToCartButton } from '../AddToCartButton'
-import { RemoveFromCartButton } from '../RemoveFromCartButton'
 
 import classes from './index.module.scss'
 
@@ -16,12 +14,13 @@ export const priceFromJSON = (priceJSON: string, quantity: number = 1, raw?: boo
       const parsed = JSON.parse(priceJSON)?.data[0]
       const priceValue = parsed.unit_amount * quantity
       const priceType = parsed.type
+      const currency = parsed.currency || 'EUR' // Default to EUR if not provided
 
       if (raw) return priceValue.toString()
 
       price = (priceValue / 100).toLocaleString('en-US', {
         style: 'currency',
-        currency: 'USD', // TODO: use `parsed.currency`
+        currency: 'EUR', // Updated to use Euro
       })
 
       if (priceType === 'recurring') {
@@ -66,15 +65,8 @@ export const Price: React.FC<{
       {typeof price?.actualPrice !== 'undefined' && price?.withQuantity !== '' && (
         <div className={classes.price}>
           <p>{price?.withQuantity}</p>
-          {quantity > 1 && (
-            <small className={classes.priceBreakdown}>{`${price.actualPrice} x ${quantity}`}</small>
-          )}
         </div>
       )}
-      {button && button === 'addToCart' && (
-        <AddToCartButton product={product} appearance="default" />
-      )}
-      {button && button === 'removeFromCart' && <RemoveFromCartButton product={product} />}
     </div>
   )
 }
