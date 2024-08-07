@@ -7,7 +7,6 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
       .filter(Boolean)
