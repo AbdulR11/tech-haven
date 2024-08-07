@@ -3,8 +3,7 @@ const ContentSecurityPolicy = require('./csp')
 const redirects = require('./redirects')
 
 const nextConfig = {
-  typeScript:
-  {
+  typescript: {
     ignoreBuildErrors: true,
   },
   reactStrictMode: true,
