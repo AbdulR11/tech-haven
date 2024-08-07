@@ -1,5 +1,6 @@
 {
   "name": "@payloadcms/template-ecommerce",
+  "homepage": ".",
   "description": "E-commerce template for Payload",
   "version": "1.0.0",
   "main": "dist/server.js",
@@ -44,8 +45,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "7.45.4",
     "react-router-dom": "5.3.4",
-    "stripe": "^10.2.0",
-    "homepage": "."
+    "stripe": "^10.2.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.1.6",
